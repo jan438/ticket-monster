@@ -7,6 +7,10 @@ import javax.persistence.TypedQuery;
 import java.util.Date;
 public class NestedPerformanceDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private Date date;
 	private String displayTitle;

@@ -11,7 +11,8 @@ public class CircularBuffer<T> {
 
     private final int capacity;
 
-    public CircularBuffer(int capacity) {
+    @SuppressWarnings("unchecked")
+	public CircularBuffer(int capacity) {
         buffer = (T[]) new Object[capacity];
         this.capacity = capacity;
     }

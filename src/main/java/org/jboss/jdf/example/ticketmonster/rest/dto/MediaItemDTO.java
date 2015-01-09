@@ -8,6 +8,10 @@ import org.jboss.jdf.example.ticketmonster.model.MediaType;
 import javax.xml.bind.annotation.XmlRootElement;@XmlRootElement
 public class MediaItemDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private MediaType mediaType;
 	private String url;

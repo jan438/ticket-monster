@@ -69,7 +69,8 @@ public class Bot {
         timer.cancel();
     }
     
-    @Timeout
+    @SuppressWarnings("unchecked")
+	@Timeout
     public void book(Timer timer) {
         // Select a show at random
         Show show = selectAtRandom(showService.getAll(MultivaluedHashMap.<String, String>empty()));

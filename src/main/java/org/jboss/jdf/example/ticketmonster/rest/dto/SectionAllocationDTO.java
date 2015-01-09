@@ -9,6 +9,10 @@ import org.jboss.jdf.example.ticketmonster.rest.dto.NestedSectionDTO;
 import javax.xml.bind.annotation.XmlRootElement;@XmlRootElement
 public class SectionAllocationDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int occupiedCount;
 	private NestedPerformanceDTO performance;
 	private NestedSectionDTO section;

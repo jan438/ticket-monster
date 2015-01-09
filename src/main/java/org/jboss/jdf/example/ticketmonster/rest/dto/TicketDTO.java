@@ -9,6 +9,10 @@ import org.jboss.jdf.example.ticketmonster.rest.dto.SeatDTO;
 import javax.xml.bind.annotation.XmlRootElement;@XmlRootElement
 public class TicketDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private NestedTicketCategoryDTO ticketCategory;
 	private float price;

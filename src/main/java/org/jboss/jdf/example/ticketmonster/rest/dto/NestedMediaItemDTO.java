@@ -7,6 +7,10 @@ import javax.persistence.TypedQuery;
 import org.jboss.jdf.example.ticketmonster.model.MediaType;
 public class NestedMediaItemDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private MediaType mediaType;
 	private String url;

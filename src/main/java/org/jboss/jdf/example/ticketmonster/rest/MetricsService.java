@@ -77,7 +77,8 @@ public class MetricsService {
             .createQuery("select b.performance.id, SIZE(b.tickets) from Booking b "
                 + "WHERE b.performance.date > current_timestamp GROUP BY b.performance.id");
 
-        List<Object[]> results = occupiedCountsQuery.getResultList();
+        @SuppressWarnings("unchecked")
+		List<Object[]> results = occupiedCountsQuery.getResultList();
         for (Object[] result : results) {
             occupiedCounts.put((Long) result[0],
                 ((Integer) result[1]).longValue());

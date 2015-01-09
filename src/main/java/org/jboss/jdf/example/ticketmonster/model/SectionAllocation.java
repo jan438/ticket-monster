@@ -40,7 +40,12 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = { "performance_id", "section_id" }))
 public class SectionAllocation implements Serializable {
-    public static final int EXPIRATION_TIME = 60 * 1000;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public static final int EXPIRATION_TIME = 60 * 1000;
 
     /* Declaration of fields */
 
@@ -61,7 +66,6 @@ public class SectionAllocation implements Serializable {
      * warnings the java compiler gives us about not using the field!
      * </p>
      */
-    @SuppressWarnings("unused")
     @Version
     private long version;
 

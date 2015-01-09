@@ -6,6 +6,10 @@ import javax.persistence.EntityManager;
 import org.jboss.jdf.example.ticketmonster.rest.dto.NestedSectionDTO;
 public class SeatDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private NestedSectionDTO section;
 	private int rowNumber;
 	private int number;

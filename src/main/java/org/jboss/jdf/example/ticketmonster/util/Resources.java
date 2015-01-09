@@ -24,9 +24,7 @@ public class Resources {
     /**
      * Alias the persistence context
      */
-    // use @SuppressWarnings to tell IDE to ignore warnings about field not being referenced directly
-   @SuppressWarnings("unused")
-   @Produces
+    @Produces
    @PersistenceContext
    private EntityManager em;
    

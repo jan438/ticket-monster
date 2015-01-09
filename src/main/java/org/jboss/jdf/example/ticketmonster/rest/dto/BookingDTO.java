@@ -14,6 +14,10 @@ import org.jboss.jdf.example.ticketmonster.rest.dto.NestedPerformanceDTO;
 import javax.xml.bind.annotation.XmlRootElement;@XmlRootElement
 public class BookingDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private float totalTicketPrice;
 	private Long id;
 	private Set<NestedTicketDTO> tickets = new HashSet<NestedTicketDTO>();

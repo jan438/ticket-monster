@@ -7,6 +7,10 @@ import javax.persistence.TypedQuery;
 import org.jboss.jdf.example.ticketmonster.rest.dto.SeatDTO;
 public class NestedTicketDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private float price;
 	private SeatDTO seat;

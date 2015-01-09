@@ -7,6 +7,10 @@ import javax.persistence.TypedQuery;
 import org.jboss.jdf.example.ticketmonster.rest.dto.AddressDTO;
 public class NestedVenueDTO implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private String name;
 	private AddressDTO address;
